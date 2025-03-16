@@ -31,7 +31,7 @@ class UploadFile(StatesGroup):
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
-    await message.answer(f'⚙️ Для доступу к функционалу воспользуйтесь кнопками!',
+    await message.answer(f'⚙️ Для доступа к функционалу воспользуйтесь кнопками!',
                          reply_markup=upload_keyboard)
 
 
